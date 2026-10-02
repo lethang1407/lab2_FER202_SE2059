@@ -49,9 +49,11 @@ function MovieItem({ task, toggleFavorite }) {
         {task.isFavorite ? "Bỏ yêu thích" : "Yêu thích"}
       </button>
       <button
-        onClick={() => window.alert(
-          "Movies Details \n ========= \n Title: {task.title}"
-        )}
+        onClick={() =>
+          window.alert(
+            `Movie Details\n--------------\nTitle: ${task.title}\nGenre: ${task.genre}\nYear: ${task.year}\nRating: ${task.rating}\nDirector: ${task.director}\nDuration: ${task.duration} minutes\n\nDescription: ${task.description}\n--------------`,
+          )
+        }
         style={{
           padding: "8px 15px",
           fontSize: "16px",
