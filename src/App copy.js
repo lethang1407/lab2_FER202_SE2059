@@ -1,10 +1,10 @@
-import Movie from "./components/Movie";
+import TodoApp from "./components/TodoApp";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (
     <ThemeProvider>
-      <Movie />
+      <TodoApp />
     </ThemeProvider>
   );
 }
